@@ -8,12 +8,19 @@ var NAMESPACE = {};
  */
 (function(window, document, app, undefined){
 
+// keeping name string
 var _name = "test";
 
 
+// show a dialog with the _name
 app.whoIs = function(){
 	alert(_name);
 };
+
+// added deferred
+app.deferred = function(time, fn){
+	return setTimeout(fn, time);
+}
 
 
 }(this, document, NAMESPACE));
