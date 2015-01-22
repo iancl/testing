@@ -1,3 +1,4 @@
+'use strict';
 var NAMESPACE = {};
 
 /**
@@ -20,7 +21,12 @@ app.whoIs = function(){
 // added deferred
 app.deferred = function(time, fn){
 	return setTimeout(fn, time);
-}
+};
+
+// setting local name
+app.setName = function(name){
+	_name = name;
+};
 
 
 }(this, document, NAMESPACE));
